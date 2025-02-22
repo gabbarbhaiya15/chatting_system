@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("http://localhost:5000", { // Update to local server
+      const socket = io("https://chatting-system-tjts.onrender.com", { // Update to local server
         query: {
           userId: authUser._id,
         },
